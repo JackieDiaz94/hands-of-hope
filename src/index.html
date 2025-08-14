@@ -8,6 +8,9 @@
     <link rel="icon" type="image/png" href="/images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+     <!-- Add your JavaScript here -->
+  <script src="main.js" type="module" defer></script>
   </head>
   <body>
     <header class="header">
@@ -32,7 +35,7 @@
       <section class="main">
         <div class="spacer">
           <div class="text">
-            <h1>Connect.<br>Serve.<br>Transform.</h1>
+            <h1>Connect.<br />Serve.<br />Transform.</h1>
             <h2>Find your perfect volunteer opportunity or the right helpers for your cause—all in one place.</h2>
             <p>
               Hands of Hope bridges the gap between passionate volunteers and meaningful service opportunities worldwide. Whether you're looking to make a difference in your neighborhood or across the globe, our platform makes it simple to discover,
@@ -49,73 +52,308 @@
         </div>
       </section>
       <section>
-<div class="logo-cloud">
-        <p class="title">Trusted by Leading Organizations</p>
-        <div class="logos">
-          <!-- <img src="/images/logo1.svg" alt="Logo 1"/>
+        <div class="logo-cloud">
+          <p class="title">Trusted by Leading Organizations</p>
+          <div class="logos">
+            <!-- <img src="/images/logo1.svg" alt="Logo 1"/>
    <img src="/images/logo2.svg" alt="Logo 2"/>
    <img src="/images/logo3.svg" alt="Logo 3"/>
    <img src="/images/logo4.svg" alt="Logo 4"/> -->
-          <div class="logo-container">
-            <img src="images/logo1.svg" alt="Logo" class="blue-logo" />
-            <img src="images/Property 1=Hover.svg" alt="Logo Hover" class="orange-logo" />
+            <div class="logo-container">
+              <img src="images/logo1.svg" alt="Logo" class="blue-logo" />
+              <img src="images/Property 1=Hover.svg" alt="Logo Hover" class="orange-logo" />
+            </div>
+            <div class="logo-container">
+              <img src="images/logo2.svg" alt="Logo" class="blue-logo" />
+              <img src="images/Property 1=Hover2.svg" alt="Logo Hover" class="orange-logo" />
+            </div>
+            <div class="logo-container">
+              <img src="images/logo3.svg" alt="Logo" class="blue-logo" />
+              <img src="images/Property 1=Hover3.svg" alt="Logo Hover" class="orange-logo" />
+            </div>
+            <div class="logo-container">
+              <img src="images/logo4.svg" alt="Logo" class="blue-logo" />
+              <img src="images/Property 1=Hover4.svg" alt="Logo Hover" class="orange-logo" />
+            </div>
           </div>
-          <div class="logo-container">
-            <img src="images/logo2.svg" alt="Logo" class="blue-logo" />
-            <img src="images/Property 1=Hover2.svg" alt="Logo Hover" class="orange-logo" />
+        </div>
+      </section>
+      <!-- Section 1: Service Made Simple (Light Blue Background) -->
+      <section class="section-light-blue">
+        <div class="container">
+          <div class="feature-content">
+            <div class="feature-text">
+              <h2>Service<br />Made Simple</h2>
+              <p class="subtitle">Discover opportunities that match your skills, schedule, and passion.</p>
+              <p class="description">
+                Our intelligent matching system helps you find the perfect fit for your unique talents and availability. Track your impact, build a service portfolio, and connect with like-minded volunteers—all through our intuitive mobile-friendly
+                platform. From one-time events to ongoing commitments, Hands of Hope puts meaningful service at your fingertips.
+              </p>
+              <a href="#" class="btn yellow">Find Your Opportunity</a>
+            </div>
+            <div class="feature-image">
+              <img src="images/Volunteers Image 1.png" alt="Volunteers lifting boxes" />
+            </div>
           </div>
-          <div class="logo-container">
-            <img src="images/logo3.svg" alt="Logo" class="blue-logo" />
-            <img src="images/Property 1=Hover3.svg" alt="Logo Hover" class="orange-logo" />
+        </div>
+      </section>
+
+      <!-- Section 2: Amplify Your Community Impact (Light Yellow Background) -->
+      <section class="section-light-yellow">
+        <div class="container">
+          <div class="feature-content">
+            <div class="feature-image">
+              <img src="images/Volunteers Image2.png" alt="Teamwork hands together" />
+            </div>
+            <div class="feature-text">
+              <h2>Amplify Your<br />Community Impact</h2>
+              <p class="subtitle">The right volunteers make all the difference.</p>
+              <p class="description">
+                Community organizations thrive when they have access to dedicated volunteers. Our platform helps you broadcast your needs, manage volunteer registrations, and coordinate efforts efficiently. From neighborhood clean-ups to global
+                initiatives, Hands of Hope connects you with passionate individuals ready to support your cause—letting you focus on creating maximum impact.
+              </p>
+              <a href="#" class="btn blue">Register Your Organization</a>
+            </div>
           </div>
-          <div class="logo-container">
-            <img src="images/logo4.svg" alt="Logo" class="blue-logo" />
-            <img src="images/Property 1=Hover4.svg" alt="Logo Hover" class="orange-logo" />
+        </div>
+      </section>
+      <section class="hero-section">
+        <div class="hero-container">
+          <h1 class="hero-title">Join the Global Movement of Hope</h1>
+          <h2 class="hero-subtitle">One platform. Countless ways to make a difference.</h2>
+          <p class="hero-text">
+            Every day, thousands of volunteers and organizations around the world connect through Hands of Hope to create meaningful change. Whether you’re looking to serve or seeking volunteers, becoming part of our community takes just minutes—and the
+            impact lasts a lifetime.
+          </p>
+
+          <div class="hero-map">
+            <img src="images/Map.png" alt="World Map with Dots" class="mx-auto w-full max-w-3xl" />
+            <!-- Optional: add absolutely-positioned orange dots here if needed -->
+          </div>
+
+          <h3 class="hero-cta-title">Start Your Journey</h3>
+
+          <div class="hero-buttons">
+            <button class="volunteer">I Want To Volunteer</button>
+            <button class="need-volunteers">I Need Volunteers</button>
+          </div>
+        </div>
+      </section>
+      <section class="Background">
+  <!-- Section Titles -->
+  <h2 class="title1">Testimonials</h2>
+  <h3 class="subtitle1">Real Stories, Real Impact</h3>
+
+  <!-- Toggle Buttons -->
+  <div class="Buttons">
+    <button id="volunteerButton" class="toggle-button active">Volunteers</button>
+    <button id="organizationButton" class="toggle-button">Organization</button>
+  </div>
+
+  <!-- Carousel Container -->
+  <div class="carousel">
+    <!-- Volunteer Track -->
+    <div id="volunteerTrack" class="track active">
+      <!-- Volunteer Card 1 -->
+      <div class="card">
+        <p>
+          “Hands of Hope made it <span class="highlight">incredibly easy</span> to find
+          <span class="highlight">local opportunities</span> that fit my weekend availability. I've connected with three community gardens in my area and have made
+          <span class="highlight">amazing friends</span> while helping to provide fresh produce for local food banks.”
+        </p>
+        <div class="profile">
+          <img src="images/Image.png" alt="Sofia J." class="profile-img" />
+          <div class="profile-text">
+            <div class="author">Sofia J.</div>
+            <div class="role">Urban Agricultural Volunteer</div>
           </div>
         </div>
       </div>
-      </section>
-       <!-- Section 1: Service Made Simple (Light Blue Background) -->
-<section class="section-light-blue">
-  <div class="container">
-    <div class="feature-content">
-      <div class="feature-text">
-        <h2>Service<br>Made Simple</h2>
-        <p class="subtitle">Discover opportunities that match your skills, schedule, and passion.</p>
-        <p class="description">
-          Our intelligent matching system helps you find the perfect fit for your unique talents and availability.
-          Track your impact, build a service portfolio, and connect with like-minded volunteers—all through our intuitive mobile-friendly platform.
-          From one-time events to ongoing commitments, Hands of Hope puts meaningful service at your fingertips.
-        </p>
-        <a href="#" class="btn yellow">Find Your Opportunity</a>
-      </div>
-      <div class="feature-image">
-        <img src="images/Volunteers Image 1.png" alt="Volunteers lifting boxes">
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Section 2: Amplify Your Community Impact (Light Yellow Background) -->
-<section class="section-light-yellow">
-  <div class="container">
-    <div class="feature-content">
-      <div class="feature-image">
-        <img src="images/Volunteers Image2.png" alt="Teamwork hands together">
-      </div>
-      <div class="feature-text">
-        <h2>Amplify Your<br>Community Impact</h2>
-        <p class="subtitle">The right volunteers make all the difference.</p>
-        <p class="description">
-          Community organizations thrive when they have access to dedicated volunteers. Our platform helps you broadcast your needs,
-          manage volunteer registrations, and coordinate efforts efficiently. From neighborhood clean-ups to global initiatives,
-          Hands of Hope connects you with passionate individuals ready to support your cause—letting you focus on creating maximum impact.
+      <!-- Volunteer Card 2 -->
+      <div class="card">
+        <p>
+          "As a <span class="highlight">software developer</span>, I wanted to use my skills for good but didn't know where to start. Through Hands of Hope, I found a nonprofit that needed help
+          <span class="highlight">building their website</span>. Now I <span class="highlight">volunteer remotely</span> for two hours each week, making a difference without even leaving my apartment!"
         </p>
-        <a href="#" class="btn blue">Register Your Organization</a>
+        <div class="profile">
+          <img src="images/Image2.png" alt="Marcus T." class="profile-img" />
+          <div class="profile-text">
+            <div class="author">Marcus T.</div>
+            <div class="role">Digital Skills Volunteer</div>
+          </div>
+        </div>
       </div>
+
+      <!-- Volunteer Card 3 -->
+      <div class="card">
+        <p>
+          "After college, I wanted to volunteer <span class="highlight">internationally</span> but was overwhelmed by all the options. Hands of Hope helped me find a
+          <span class="highlight">verified teaching program</span> in Thailand that aligned perfectly with my experience and values. The built-in reviews from past volunteers gave me confidence in my choice."
+        </p>
+        <div class="profile">
+          <img src="images/Image3.png" alt="Aisha R." class="profile-img" />
+          <div class="profile-text">
+            <div class="author">Aisha R.</div>
+            <div class="role">International Education Volunteer</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Volunteer Card 4 -->
+      <div class="card">
+        <p>
+          "I <span class="highlight">travel frequently</span> for work, which made regular volunteering seem impossible. With Hands of Hope, I can find
+          <span class="highlight">one-time opportunities</span> wherever I happen to be. Last month, I helped with beach clean-ups in three different cities!"
+        </p>
+        <div class="profile">
+          <img src="images/Image4.png" alt="Carlos M." class="profile-img" />
+          <div class="profile-text">
+            <div class="author">Carlos M.</div>
+            <div class="role">Flexible Environmental Volunteer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Organization Track -->
+    <div id="organizationTrack" class="track">
+      <!-- Org Card 1 -->
+      <div class="card">
+        <p>
+          "Our neighborhood association struggled to find <span class="highlight">consistent help</span> for our community garden. Since joining Hands of Hope, we've seen a
+          <span class="highlight">300% increase in volunteer participation</span>. The platform's scheduling tools have made coordination effortless."
+        </p>
+        <div class="profile">
+          <img src="images/Image5.png" alt="Grace L." class="profile-img" />
+          <div class="profile-text">
+            <div class="author">Grace L.</div>
+            <div class="role">Oakridge Neighborhood Association</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Org Card 2 -->
+      <div class="card">
+        <p>
+          "As a small literacy nonprofit, we couldn't afford volunteer management software. Hands of Hope provided
+          <span class="highlight">exactly what we needed</span> at no cost. We've been able to expand our after-school reading program to
+          <span class="highlight">three new locations</span> because of the volunteers we've connected with."
+        </p>
+        <div class="profile">
+          <img src="images/Image6.png" alt="Michael P." class="profile-img" />
+          <div class="profile-text">
+            <div class="author">Michael P.</div>
+            <div class="role">Books for All Foundation</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Org Card 3 -->
+      <div class="card">
+        <p>
+          "The verification process for both volunteers and organizations creates a <span class="highlight">level of trust</span> that's invaluable. We know that volunteers coming through Hands of Hope are
+          <span class="highlight">reliable</span> and <span class="highlight">genuinely interested in our cause</span>."
+        </p>
+        <div class="profile">
+          <img src="images/Image7.png" alt="Dr. Samira K." class="profile-img" />
+          <div class="profile-text">
+            <div class="author">Dr. Samira K.</div>
+            <div class="role">Global Health Initiative</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Org Card 4 -->
+      <div class="card">
+        <p>
+          "The analytics dashboard helps us understand our volunteer engagement and <span class="highlight">improve our opportunities</span>. We've seen
+          <span class="highlight">retention increase</span> by 45% since implementing the suggestions from our Hands of Hope impact report."
+        </p>
+        <div class="profile">
+          <img src="images/Image8.png" alt="Robert T." class="profile-img" />
+          <div class="profile-text">
+            <div class="author">Robert T.</div>
+            <div class="role">Community Disaster Response Team</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrows Underneath -->
+    <div class="Arrowcontainer">
+      <button id="previousbutton" class="arrow arrow-left"></button>
+      <button id="nextbutton" class="arrow arrow-right"></button>
     </div>
   </div>
 </section>
+<section class="newsletter-section">
+    <div class="newsletter-content">
+      <div class="newsletter-text">
+        <h2 class="newsletter-heading">Stay Informed, Stay Inspired</h2>
+        <p class="newsletter-subtext">Get the latest volunteer opportunities and impact stories delivered to your inbox.</p>
+        <button class="subscribe-button">Subscribe Now</button>
+      </div>
+      <div class="newsletter-image">
+        <img src="images/Rectangle 7.png" alt="Volunteers painting" />
+      </div>
+    </div>
+
+    <div class="newsletter-footer">
+      <div class="footer-column">
+        <h4>For Volunteers</h4>
+        <ul>
+          <li><a href="#">Find Opportunities</a></li>
+          <li><a href="#">Create Profile</a></li>
+          <li><a href="#">Track Impact</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>For Organizations</h4>
+        <ul>
+          <li><a href="#">Register Organization</a></li>
+          <li><a href="#">Post Opportunities</a></li>
+          <li><a href="#">Volunteer Management</a></li>
+          <li><a href="#">Success Stories</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="#">Our Mission</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Impact Reports</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Volunteer Guide</a></li>
+          <li><a href="#">Organization Guide</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Privacy & Terms</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
     </main>
   </body>
 </html>
