@@ -39,17 +39,6 @@ body {
   z-index: 0;
 }
 
-/* body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 202, 95, 0.9);
-  z-index: -1;
-  pointer-events: none;
-} */
 
 main {
   /* Do not change it! */
@@ -258,7 +247,7 @@ main {
   align-items: center;
   gap: 32px;
   background-color: #FFFFFF;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 
@@ -500,7 +489,7 @@ main {
   background-color: rgba(7, 55, 104, 0.3); /* Deep navy with opacity */
   padding: 64px 32px;
   margin-top: 68px;
-  margin-bottom: 68px;
+  margin-bottom: 100px;
   border-radius: 24px;
   max-width: 1300px;
   width: 100%;
@@ -599,20 +588,22 @@ main {
   margin: 0 auto;
   text-align: center;
   background: #FBE4B4;
+  margin-top: -100px;
+  padding-bottom: 100px;
 }
 
 /* Titles */
 .title1 {
-  font-size: 40px;
-  font-weight: var(--font-semibold, 600);
+  font-size: 56px;
+  font-weight: var(--font-bold);
   color: #375475;
   padding-bottom: 40px;
-  padding-top: 70px;
+  padding-top: 100px;
 }
 
 .subtitle1 {
-  font-size: 48px;
-  font-weight: var(--font-bold);
+  font-size: 40px;
+  font-weight: var(--font-semibold);
   margin-bottom: 3rem;
   color: #375475;
 }
@@ -649,7 +640,7 @@ main {
 /* Carousel container */
 .carousel {
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 200px;
 }
 
 /* Track uses flex and smooth transform */
