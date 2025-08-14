@@ -34,16 +34,12 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-image: url('images/Globe Background.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: bottom left;
   color: var(--slate-900);
   position: relative;
   z-index: 0;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   top: 0;
@@ -53,7 +49,7 @@ body::before {
   background-color: rgba(255, 202, 95, 0.9);
   z-index: -1;
   pointer-events: none;
-}
+} */
 
 main {
   /* Do not change it! */
@@ -129,12 +125,37 @@ main {
 }
 
 .main {
-  padding: 4rem 2rem;
-  max-width: 1600px;
+  position: relative;
+  padding: 4rem 2rem 8rem;
+  width: 100%;
   margin: 0 auto;
+  background-image: url('images/Globe Background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 202, 95, 0.9); /* yellow overlay */
+  z-index: 0;
+}
+
+.main > * {
+  position: relative;
+  z-index: 1; /* keep text & images above the overlay */
 }
 
 .spacer {
+  position: relative;
+  z-index: 1;
+  max-width: 1600px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -226,3 +247,229 @@ main {
   right: 8.5%;
   transform: translateY(-20%)(-20%);
 }
+
+
+/* =========================
+   LOGO CLOUD SECTION STYLES
+   ========================= */
+.logo-cloud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  background-color: #FFFFFF;
+  padding: 60px 20px;
+}
+
+
+.logo-cloud .title {
+  font-size: 34px;
+  font-weight: var(--font-semibold);
+  line-height: var(--line-height-xl);
+  color: #3B506C;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 30px;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 130px; /* Controls spacing between logos */
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  position: relative;
+  width: 200px; /* Set width based on logo size */
+  height: 100px; /* Set height based on logo size */
+}
+
+.logo-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Prevents image from becoming huge */
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.logo-container .orange-logo {
+  opacity: 0;
+}
+
+.logo-container:hover .orange-logo {
+  opacity: 1;
+}
+
+.logo-container:hover .blue-logo {
+  opacity: 0;
+}
+
+
+/* Section Backgrounds */
+.section-light-blue {
+  background-color: #5877A133;
+}
+
+.section-light-yellow {
+  /* background-color: #FFD47ED2; */
+  background-color: rgba(255, 212, 126, 0.7); /* 70% opacity */
+}
+
+/* Container */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 128px 16px;
+}
+
+/* Layout */
+.feature-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.feature-content.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Text Block */
+.feature-text {
+  flex: 1 1 500px;
+}
+
+.feature-text h2 {
+  font-size: 48px;
+  font-weight: var(--font-extrabold);
+  color: #375475;
+  line-height: 1.3;
+  margin-bottom: 36px;
+
+}
+
+/* Common style for all subtitles */
+.feature-text .subtitle {
+  font-size: 24px;
+  font-weight: var(--font-bold);
+  color: #464550E6;
+  line-height: var(--line-height-xl);
+  margin-bottom: 36px;
+  max-width: 500px;
+}
+
+/* Text alignment by section */
+.section-light-blue .feature-text .subtitle {
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.section-light-yellow .feature-text .subtitle {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.feature-text .description {
+  font-size: 16px;
+  font-weight: var(--font-semibold);
+  line-height: var(--line-height-base);
+  margin-bottom: 50px;
+  color: #464550E6;
+}
+
+/* Base width for all descriptions */
+.feature-text .description {
+  max-width: 500px;
+}
+
+/* Light blue section: left-align description */
+.section-light-blue .feature-text .description {
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+  max-width: 550px;
+}
+
+/* Light yellow section: right-align description */
+.section-light-yellow .feature-text .description {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 550px;
+}
+
+
+/* Image Block */
+.feature-image {
+  flex: 1 1 500px;
+
+}
+
+.feature-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: var(--font-bold);
+  text-decoration: underline;
+  color: #464550;
+}
+
+
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .feature-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-content.reverse {
+    flex-direction: column;
+  }
+
+  .feature-image {
+    width: 100%;
+  }
+}
+
+/* Align yellow section text and button to the Right */
+.section-light-yellow .feature-text {
+  text-align: Right;
+}
+
+.section-light-yellow .feature-text .btn {
+  text-align: Right;
+}
+
+/* Optional: enforce Right align on small screens */
+@media (max-width: 768px) {
+  .section-light-yellow .feature-text {
+    text-align: Right !important;
+  }
+}
+
+.section-light-blue,
+.section-light-yellow {
+  margin-left: -32px;
+  margin-right: -32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: calc(100% + 64px); /* 32px left + 32px right */
+}
+
+
+
